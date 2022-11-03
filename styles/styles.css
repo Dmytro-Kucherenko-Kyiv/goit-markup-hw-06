@@ -798,6 +798,11 @@ margin-bottom: 20px;
   margin-bottom: 10px;
 }
 
+.modal-field-comment {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 .input-label {
   display: block;
   font-size: 12px;
@@ -856,6 +861,17 @@ margin-bottom: 20px;
   padding: 12px;
   resize: none;
   outline: transparent;
+}
+
+.checkbox {
+  padding-left: 14px;
+  padding-right: 11px;
+}
+
+.checkbox-input {
+  margin-right: 7px;
+  border-radius: 20px;
+  background-color: tomato;
 }
 
 .term {

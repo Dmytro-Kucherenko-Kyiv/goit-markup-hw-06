@@ -470,7 +470,7 @@
                 </div>
               </div>
 
-              <div class="modal-field">
+              <div class="modal-field-comment">
                 <label for="user-comment" class="input-label">Коментар</label>
                 <div class="input-wrap">
                 <textarea
@@ -482,8 +482,14 @@
                 </div>
               </div>
 
-              <div class="">
-              <p class="term">Погоджуюся з розсилкою та приймаю <a class="term-link" href="">Умови договору</a></p>
+              <div class="checkbox">
+                <input 
+                type="checkbox"
+                class="checkbox-input" 
+                name="agreement" 
+                value="agreement"
+                />
+              <label class="term">Погоджуюся з розсилкою та приймаю <a class="term-link" href="">Умови договору</a></label>
               </div>
 
               <button type="submit" class="modal-submit">Відправити</button>
@@ -492,7 +498,6 @@
           </div>
 
         </div>
-
         <script src="./js/modal.js"></script>
 
     </body>
