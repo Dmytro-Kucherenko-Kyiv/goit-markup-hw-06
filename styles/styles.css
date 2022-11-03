@@ -1,6 +1,10 @@
+/*---------- scroll ----------*/
+
 html {
   scroll-behavior: smooth;
 }
+
+/*---------- root ----------*/
 
 :root {
   --primary-text-color: #757575;
@@ -870,8 +874,6 @@ margin-bottom: 20px;
 
 .checkbox-input {
   margin-right: 7px;
-  border-radius: 20px;
-  background-color: tomato;
 }
 
 .term {
