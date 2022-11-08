@@ -486,10 +486,18 @@
                 <input 
                 type="checkbox"
                 class="checkbox-input" 
-                name="agreement" 
+                name="agreement"
+                id="privasy" 
                 value="agreement"
                 />
-              <label class="term">Погоджуюся з розсилкою та приймаю <a class="term-link" href="">Умови договору</a></label>
+              <label for="privasy" class="term">
+                <span>
+                  <svg class="accept-icon" width="16" height="15">
+                    <use href="./img/icons.svg#icon-accept"></use>
+                  </svg>
+                </span>
+                Погоджуюся з розсилкою та приймаю <a class="term-link" href="">Умови договору</a>
+              </label>
               </div>
 
               <button type="submit" class="modal-submit">Відправити</button>

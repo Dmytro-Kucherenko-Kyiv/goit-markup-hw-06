@@ -872,16 +872,17 @@ margin-bottom: 20px;
   padding-right: 11px;
 }
 
-.checkbox-input {
-  margin-right: 7px;
-}
-
 .term {
-  margin-top: 20px;
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-text-color);
-  text-align: center;
+}
+
+.term span {
+  width: 16px;
+  height: 15px;
+  border: 3 px solid var(--secondary-text-color);
+  border-radius: 2px;
 }
 
 .term-link {
