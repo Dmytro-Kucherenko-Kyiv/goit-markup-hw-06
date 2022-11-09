@@ -81,6 +81,19 @@ ul {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .header {
   background: var(--white-color);
   flex-direction: row;
@@ -865,28 +878,44 @@ margin-bottom: 20px;
   padding: 12px;
   resize: none;
   outline: transparent;
+  transition: border-color var(--animation);
 }
 
-.checkbox {
-  padding-left: 14px;
-  padding-right: 11px;
-}
-
-.term {
+.checkbox-label {
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.term span {
+.checkbox-label span {
   width: 16px;
   height: 15px;
-  border: 3 px solid var(--secondary-text-color);
+  border: 1px solid var(--black-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+  margin-right: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  transition: border-color var(--animation), fill var(--animation), background-color var(--animation);
+}
+
+.checkbox-input:checked + .checkbox-label span {
+  background-color: var(--accent-color);
+  border-color: transparent;
+  fill: var(--white-color)
+}
+
+.checkbox-input:focus + .checkbox-label span {
+  border-color: var(--accent-color);
 }
 
 .term-link {
-  margin-top: 20px;
+  padding-left: 5px;
   font-size: 14px;
   line-height: 1.71;
   color: var(--accent-color);
@@ -914,6 +943,7 @@ margin-bottom: 20px;
   transition: background-color var(--animation);
 }
 
-.modal-submit:hover {
+.modal-submit:hover,
+.modal-submit:focus {
   background-color: var(--button-active);
 }
